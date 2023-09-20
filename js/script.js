@@ -6,5 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
       nextEl: ".banner-swiper .swiper-button-next",
       prevEl: ".banner-swiper .swiper-button-prev",
     },
+    pagination: {
+      el: ".banner-swiper .swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
   });
 });

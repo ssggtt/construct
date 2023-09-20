@@ -126,6 +126,10 @@ textarea::placeholder {
   padding: 175px 0;
   color: #fff;
   text-align: center;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 640px;
 }
 .banner-swiper .swiper-slide::before {
   content: "";
@@ -154,7 +158,28 @@ textarea::placeholder {
 }
 .swiper-button-next,
 .swiper-button-prev {
-	color: #fff;
-	background-color: #5A5454;
+  color: #fff;
+  background-color: #5a5454;
+  width: 60px;
+  height: 60px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 28px;
+}
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 0;
+  background-color: #d9d9d9;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #d62e4c;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 10px;
 }
 /* BANNER END */
