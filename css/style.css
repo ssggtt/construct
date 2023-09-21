@@ -10,7 +10,7 @@ body {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.6;
   min-width: 320px;
   position: relative;
   margin: 0;
@@ -49,12 +49,37 @@ input::placeholder,
 textarea::placeholder {
   color: #9f9f9f;
 }
+.def-title {
+  font-size: 42px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 25px;
+}
+.def-desc {
+  color: #6d6a6a;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.def-desc strong {
+  color: #000;
+}
+.def-title::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: calc(-100% - 25px);
+  transform: translateY(-50%);
+  background-color: #d62e4c;
+}
 .def-btn {
   background-color: #d62e4c;
-  padding: 18px 45px;
+  padding: 15px 45px;
   display: inline-block;
   transition: background-color 0.35s ease;
   font-size: 16px;
+  color: #fff;
 }
 .def-btn:hover {
   background-color: #bb2440;
@@ -183,3 +208,27 @@ textarea::placeholder {
   margin: 10px;
 }
 /* BANNER END */
+/* ABOUT */
+.s-about {
+  padding: 90px 0;
+}
+.about-row {
+  display: flex;
+  align-items: center;
+}
+.s-about .def-desc {
+  margin-bottom: 30px;
+}
+.about-left {
+  margin-right: 90px;
+	max-width: 505px;
+}
+.about-right {
+  width: 550px;
+}
+.about-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ABOUT END */
