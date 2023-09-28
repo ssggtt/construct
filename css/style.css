@@ -54,6 +54,7 @@ textarea::placeholder {
   font-weight: 700;
   position: relative;
   margin-bottom: 25px;
+  line-height: 1.4;
 }
 .def-desc {
   color: #6d6a6a;
@@ -68,7 +69,7 @@ textarea::placeholder {
   height: 1px;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 30px;
   left: calc(-100% - 25px);
   transform: translateY(-50%);
   background-color: #d62e4c;
@@ -221,7 +222,7 @@ textarea::placeholder {
 }
 .about-left {
   margin-right: 90px;
-	max-width: 505px;
+  max-width: 505px;
 }
 .about-right {
   width: 550px;
@@ -232,3 +233,37 @@ textarea::placeholder {
   object-fit: cover;
 }
 /* ABOUT END */
+/* NUMBERS */
+.s-numbers {
+  background-color: #18353e;
+  color: #fff;
+  padding: 72px 0;
+}
+.s-numbers .def-title::before {
+  background-color: #fff;
+}
+.numbers-row {
+  display: flex;
+}
+.numbers-left {
+  width: 50%;
+  padding-right: 100px;
+  border-right: 1px solid #5d5d5d;
+}
+.numbers-right {
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(2, 300px);
+  text-align: center;
+  row-gap: 60px;
+}
+.numbers-num {
+  font-size: 52px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+.numbers-desc {
+  color: #fff;
+}
+/* NUMBERS END */
